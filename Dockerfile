@@ -5,6 +5,6 @@ RUN apt-get update -y && apt-get upgrade -y \
     && rm -rf /var/lib/apt/lists/*
 COPY . /app/
 WORKDIR /app/
-RUN git clone https://github.com/ArchBots/ArchMusic ArchMusic
-RUN cd ArchMusic && pip3 install -U -r requirements.txt
-CMD cd ArchMusic && python3 -m ArchMusic
+RUN git clone https://github.com/MonsterBos/PlutoMuzikk PlutoMuzikk
+RUN cd PlutoMuzikk && pip3 install -U -r requirements.txt
+CMD cd PlutoMuzikk && python3 -m ArchMusic
